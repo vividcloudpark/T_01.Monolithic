@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+    install:
+        runtime-versions:
+            java: correctto11
+    build:
+        commands:
+            - echo BUild started on `date`
+            - mvn package -Dmaven.test.skip=true
+    post_build:
+        commands:
+            - echo Build completed on `date`
+artifacts:
+    files:
+        - scripts/**
+        - appspec.yml
+        - target/*.jar
+    discard-paths: no
+    
