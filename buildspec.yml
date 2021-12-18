@@ -1,20 +1,19 @@
 version: 0.2
 
 phases:
-    install:
-        runtime-versions:
-            java: corretto11
-    build:
-        commands:
-            - echo Build started on `date`
-            - mvn package -Dmaven.test.skip=true
-    post_build:
-        commands:
-            - echo Build completed on `date`
+  install:
+    runtime-versions:
+      java: corretto11
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn package -Dmaven.test.skip=true
+  post_build:
+    commands:
+      - echo Build completed on `date`
 artifacts:
-    files:
-        - scripts/**
-        - appspec.yml
-        - target/*.jar
-    discard-paths: no
-    
+  files:
+    - scripts/**
+    - appspec.yml
+    - target/*.jar
+  discard-paths: no

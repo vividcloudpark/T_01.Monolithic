@@ -1,3 +1,2 @@
 #!/bin/bash
-kill -9 `pgrep java`
-java -jar target/Mono-0.0.1-SNAPSHOT.jar &
+nohup java -jar /home/ec2-user/target/Mono-0.0.1-SNAPSHOT.jar > /dev/null 2>&1 &
