@@ -1,0 +1,5 @@
+#!/bin/bash
+kill -n 9 `pgrep java`
+rm -rf /home/ec2-user/target
+rm -rf /home/ec2-user/scripts
+rm -rf /home/ec2-user/appspec.yml

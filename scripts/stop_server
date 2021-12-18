@@ -1,0 +1,6 @@
+#!/bin/bash
+
+isExitApp=`pgrep java`
+if [[ $isExitApp -gt 0 ]]; then
+    kill -9 $isExitApp
+fi
