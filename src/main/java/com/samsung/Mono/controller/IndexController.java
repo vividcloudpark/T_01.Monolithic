@@ -15,13 +15,13 @@ public class IndexController {
 
     @RequestMapping("/")
     public String indexView(Model model){
-        String serverip;
-        try {
-            serverip = InetAddress.getLocalHost().getHostName();
-            model.addAttribute("serverip", serverip);
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
+        // String serverip;
+        // try {
+        //     serverip = InetAddress.getLocalHost().getHostName();
+        //     model.addAttribute("serverip", serverip);
+        // } catch (UnknownHostException e) {
+        //     e.printStackTrace();
+        // }
         return "index.html";
     }
 
