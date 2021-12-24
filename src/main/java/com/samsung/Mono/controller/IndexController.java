@@ -21,7 +21,7 @@ public class IndexController {
             e.printStackTrace();
         }
 
-        return "index.html";
+        return "index";
     }
 
 
