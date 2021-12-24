@@ -16,7 +16,7 @@ public class IndexController {
         InetAddress serverip;
         try {
             serverip = InetAddress.getLocalHost();
-            model.addAttribute("serverIP", serverip);
+            model.addAttribute("serverip", serverip);
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
